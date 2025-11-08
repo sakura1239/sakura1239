@@ -1,0 +1,243 @@
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <title>Sakura tarot</title>
+    <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+
+
+     <div class="pink-text float">Sakura tarot</div>
+  <br>
+   
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>タロットおみくじ</title>
+<style>
+body {
+  font-family: "Hiragino Maru Gothic ProN", sans-serif;
+  text-align: center;
+  background: #fff5fb;
+  color: #333;
+}
+h1 { color: #e0c6f4; margin-top: 40px; }
+.cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px; }
+input { display: none; }
+label {
+  width: 70px; height: 100px; background: #dab5f0; color: white;
+  border-radius: 8px; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: 0.3s;
+}
+label:hover { background: #f0dcff; transform: scale(1.05); }
+input:checked + label {
+  background: #e1b6ff; color: #333; font-weight: bold; transform: scale(1.1);
+}
+.meaning { display: none; margin-top: 15px; font-size: 1.1em; }
+input:checked ~ .meaning { display: block; }
+</style>
+</head>
+<body style="background: #f7e9f6;">
+<h1>🔮 タロットおみくじ 🔮</h1>
+<p>直感でカードを1枚選んでね</p>
+
+<div class="cards">
+
+
+
+  <div>
+    <input type="radio" id="c1" name="card">
+    <label for="c1">1</label>
+    <div class="meaning">愚者：自由と新しい始まり。思い切った一歩を！</div>
+  </div>
+  <div>
+    <input type="radio" id="c2" name="card">
+    <label for="c2">2</label>
+    <div class="meaning">魔術師：チャンス到来！自信を持って行動を。</div>
+  </div>
+  <div>
+    <input type="radio" id="c3" name="card">
+    <label for="c3">3</label>
+    <div class="meaning">女教皇：直感を信じて、心を落ち着けよう。</div>
+  </div>
+  <div>
+    <input type="radio" id="c4" name="card">
+    <label for="c4">4</label>
+    <div class="meaning">女帝：愛と豊かさがあなたに微笑む日。</div>
+  </div>
+  <div>
+    <input type="radio" id="c5" name="card">
+    <label for="c5">5</label>
+    <div class="meaning">皇帝：自分の意志を貫く強さを持とう。恋愛：吉</div>
+  </div>
+  <div>
+    <input type="radio" id="c6" name="card">
+    <label for="c6">6</label>
+    <div class="meaning">法王：人との信頼関係を大切に。恋愛：吉</div>
+  </div>
+  <div>
+    <input type="radio" id="c7" name="card">
+    <label for="c7">7</label>
+    <div class="meaning">恋人：大切な選択が迫る。心の声を聴いて。恋愛：大吉</div>
+  </div>
+  <div>
+    <input type="radio" id="c8" name="card">
+    <label for="c8">8</label>
+    <div class="meaning">戦車：勢いよく突き進もう！成功の兆し。</div>
+  </div>
+  <div>
+    <input type="radio" id="c9" name="card">
+    <label for="c9">9</label>
+    <div class="meaning">力：優しさの中に真の強さあり。恋愛：吉</div>
+  </div>
+  <div>
+    <input type="radio" id="c10" name="card">
+    <label for="c10">10</label>
+    <div class="meaning">隠者：静かに考える時間が運を呼ぶ。</div>
+  </div>
+  
+
+
+  <div>
+    <input type="radio" id="c11" name="card">
+    <label for="c11">11</label>
+    <div class="meaning">運命の輪：流れに乗るチャンス！変化を恐れずに。恋愛：吉</div>
+  </div>
+  <div>
+    <input type="radio" id="c12" name="card">
+    <label for="c12">12</label>
+    <div class="meaning">正義：バランスを取り、公平な判断を。関係性：オフィシャルな関係</div>
+  </div>
+  <div>
+    <input type="radio" id="c13" name="card">
+    <label for="c13">13</label>
+    <div class="meaning">吊るされた男：視点を変えれば見えるものがある。恋愛：一時停止</div>
+  </div>
+  <div>
+    <input type="radio" id="c14" name="card">
+    <label for="c14">14</label>
+    <div class="meaning">死神：終わりは新しい始まり。再生の時。恋愛：一旦区切りがつく</div>
+  </div>
+  <div>
+    <input type="radio" id="c15" name="card">
+    <label for="c15">15</label>
+    <div class="meaning">節制：自然体でいれば良い流れに乗れる。恋愛：コミュニケーションが上手くいく</div>
+  </div>
+  <div>
+    <input type="radio" id="c16" name="card">
+    <label for="c16">16</label>
+    <div class="meaning">悪魔：執着を手放すと心が軽くなる。</div>
+  </div>
+  <div>
+    <input type="radio" id="c17" name="card">
+    <label for="c17">17</label>
+    <div class="meaning">塔：突然の変化。でもそれが必要な転機。恋愛：喧嘩に注意</div>
+  </div>
+  <div>
+    <input type="radio" id="c18" name="card">
+    <label for="c18">18</label>
+    <div class="meaning">星：希望の光。夢を信じて進もう。恋愛：あなたは憧れの存在。理想の人。美しい人。</div>
+  </div>
+  <div>
+    <input type="radio" id="c19" name="card">
+    <label for="c19">19</label>
+    <div class="meaning">月：迷いや不安に惑わされないで。</div>
+  </div>
+  <div>
+    <input type="radio" id="c20" name="card">
+    <label for="c20">20</label>
+    <div class="meaning">太陽：成功と幸福！最高の運気🌞恋愛：あなたといると明るい気持ちになる</div>
+  </div>
+  <div>
+    <input type="radio" id="c21" name="card">
+    <label for="c21">21</label>
+    <div class="meaning">審判：過去を受け入れ、再出発の時。恋愛：復活愛</div>
+  </div>
+  <div>
+    <input type="radio" id="c22" name="card">
+    <label for="c22">22</label>
+    <div class="meaning">世界：達成と調和。あなたの努力が実る。恋愛：最高に良い相性</div>
+  </div>
+</div>
+
+
+
+<h2>🌸Sakuraプロフィール🌸
+
+
+
+ <ul class="profile">
+  <vi><strong>名前：</strong>Sakura</vi>
+  <vi><strong>目標：</strong>エンジニアと占い師</vi>
+  <vi><strong>職業：</strong>フリーランス占い師</vi>
+  <vi>
+    <strong>得意な占術：</strong>
+    <ul>
+      <vi>タロット占い</vi>
+      <vi>数秘</vi>
+    </ul>
+  </vi>
+  <vi>
+    <strong>好きなこと：</strong>
+    <ul>
+      <vi>語学</vi>
+      <vi>華道</vi>
+      <vi>雑貨巡り</vi>
+    </ul>
+  </vi>
+  <vi>
+    <strong>今後したいこと：</strong>
+    <ul>
+      <vi>占いカフェの開業（実施中）</vi>
+      <vi>オンライン占いサービスの提供（実施中）</vi>
+      <vi>占いに関するブログ執筆（実施中）</vi>
+    </ul>
+  </vi>
+  <vi>
+    <strong>夢・挑戦：</strong>
+    <ul>
+      <vi>海外を冒険して世界中の素敵な物を販売する</vi>
+      <vi>占い師さん2人におすすめされた仕事</vi>
+      <vi>昔から有名人・業界・流行などの良し悪しを見極めるのが得意</vi>
+    </ul>
+  </vi>
+  <vi>
+    <strong>✨頑張っていること・予定：</strong>
+    <ul>
+      <vi>フロントエンドエンジニアになる（HTML / CSS / JavaScript学習中）</vi>
+      <vi>10年かかっても継続する</vi>
+      <vi>Blender・ZBrushで3Dモデリングスキルを磨く</vi>
+    </ul>
+  </vi>
+
+  <section class="story">
+  <h3>🌸 名前の由来
+  <p>
+    「sakura」という名前には、<br>
+    人生の儚さと、冬のような辛い時期を越えて<br>
+    春に希望が芽生えるという想いを込めています。<br>
+    <strong>SakuraTarot</strong> は、<br>
+    そんな希望の光を感じられる占いを届けたいという願いから生まれました。
+  </p>
+
+  </h3>
+  
+</section>
+
+
+</ul>
+
+
+
+</body>
+</html>
+
+</html>
+   
+
+ </body>
+
+</html>

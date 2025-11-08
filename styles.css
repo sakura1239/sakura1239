@@ -1,0 +1,47 @@
+.pink-text {
+  color:#fffdc4;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.float {
+  color: rgb(248, 177, 215);
+  font-size: 40px;
+  font-weight: bold;
+  display: inline-block;
+  animation: float 2s infinite ease-in-out;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+div {
+    display: block;
+}
+
+h1 {
+  margin-top: 200px; 
+}
+h2 {
+  color: #e0c6f4;   /* 文字色 */
+  margin-top: 200px;  /* 上の余白 */
+
+}
+
+p {
+  color: #ebbee1;    /* 文字色 */
+  margin-top: 20px;  /* 上の余白 */
+}
+
+h3 {
+  margin-top: 100px;  /* 上の余白 */
+  margin-bottom: 100px;  /* 下の余白 */
+}
+
+.profile {
+  color:rgb(151, 145, 141)
+}
